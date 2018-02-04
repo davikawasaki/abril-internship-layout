@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Dosis:400,700" rel="stylesheet">
+        <title>Quatro Rodas</title>
+    </head>
+    <body class="dosis bg-light">
+        <div class="container body text-uppercase">
+            <!-- Banner Header -->
+            <header class="row d-flex justify-content-center align-items-center">
+                <div class="banner m-3">
+                    <img src="img/banner.jpg" alt="HSBC Publicidade" />
+                </div>
+            </header>
+            <!-- End of Banner Header -->
+            <!-- Navbar Responsive -->
+            <section class="row bg-red p-0" id="navbar-responsive">
+                <div class="text-white d-flex justify-content-center align-items-center col-2">
+                    <p class="m-0">O</p>
+                </div>
+                <div class="col-8">
+                    <img src="img/logo.png" alt="Logo 4 Rodas" class="img-fluid p-3" />
+                </div>
+                <div class="text-white d-flex justify-content-center align-items-center col-2" id="navbarResponsiveCloseButton" onClick="showMainHoverbar()">
+                    <p class="m-0">X</p>
+                </div>
+            </section>
+            <!-- End of Navbar Responsive -->
+            <!-- Main Navbar Responsive -->
+            <section class="row bg-red small p-0" id="navbar-main">
+                <nav class="menu navbar navbar-expand-lg navbar-light p-0">
+                    <img src="img/logo.png" alt="Logo 4 Rodas" class="img-fluid ml-2" width="15%" />
+                    <div class="collapse navbar-collapse d-flex justify-content-end h-md-100" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-md-2 h-100">
+                            <li class="nav-item dropdown h-100" id="navbarDropdownCarros" onClick="showHoverbarCarros()">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Carros</a>
+                            </li>
+                            <li class="nav-item dropdown h-100" id="navbarDropdownTestes" onClick="showHoverbarTestes()">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Testes</a>
+                            </li>
+                            <li class="nav-item dropdown h-100">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Notícias</a>
+                            </li>
+                            <li class="nav-item dropdown h-100">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Auto-serviço</a>
+                            </li>
+                            <li class="nav-item dropdown h-100">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Guia de Compras</a>
+                            </li>
+                            <li class="nav-item dropdown h-100">
+                                <a class="nav-link dropdown-toggle text-white h-100 d-flex align-items-center my-md-3 " href="#">Tabela Fipe</a>
+                            </li>
+                            <li class="nav-item h-100">
+                                <a class="nav-link text-white h-100 d-flex align-items-center my-md-3 " href="#">Assine</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control w-75 text-secondary search-box" type="search" placeholder="Pesquisar" aria-label="Search">
+                        </form>
+                    </div>
+                </nav>
+            </section>
+            <!-- End of Main Navbar Responsive -->
+            <!-- Hover Menu Carros Navbar -->
+            <section class="navbar row bg-black small p-0 asap border-red" id="hovermenu-carros">
+                <div class="row w-100">
+                    <div class="col-3 my-3 text-center">
+                        <button type="button" class="btn btn-secondary">Ver todos os carros</button>
+                    </div>
+                    <nav class="hovermenu navbar navbar-expand-lg navbar-light col-9">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-carros-list m-0">
+                                <li>
+                                    <a class="nav-link text-white" href="#">Audi</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Bentley</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">BMW</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Chevrolet</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-carros-list m-0">
+                                <li>
+                                    <a class="nav-link text-white" href="#">Chrysler</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Chevrolet</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Dodge</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Ferrari</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-carros-list m-0">
+                                <li>
+                                    <a class="nav-link text-white" href="#">Fiat</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Ford</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Honda</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Hyundai</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-carros-list m-0">
+                                <li>
+                                    <a class="nav-link text-white" href="#">JAC Motos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Jaguar</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Jeep</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Kia</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-carros-list m-0">
+                                <li>
+                                    <a class="nav-link text-white" href="#">Lamborghini</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Mercedes-Benz</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Mitsubishi</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-white" href="#">Volkswagen</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <!-- End of Hover Menu Carros Navbar -->
+            <!-- Hover Menu Testes Navbar -->
+            <section class="row bg-black small p-0 asap border-red" id="hovermenu-testes">
+                <div class="col-2 text-center bg-secondary p-0">
+                    <ul class="navbar-types-list m-0 p-0">
+                        <li class="mt-4 bg-black">
+                            <a class="nav-link text-white text-right pl-0 py-1" href="#">Ver tudo de testes</a>
+                        </li>
+                        <li class="m-0">
+                            <a class="nav-link text-white text-right pl-0 py-0" href="#">Comparativos</a>
+                        </li>
+                        <li class="m-0">
+                            <a class="nav-link text-white text-right pl-0 py-0" href="#">Impressões</a>
+                        </li>
+                        <li class="m-0">
+                            <a class="nav-link text-white text-right pl-0 py-0" href="#">Longa duração</a>
+                        </li>
+                        <li class="mb-4">
+                            <a class="nav-link text-white text-right pl-0 py-0" href="#">Teste de pista</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 mt-4">
+                    <img src="img/tests-1.jpg" alt="Ford Focus Test" class="img-fluid w-100 mb-2" />
+                    <h6 class="test-image-thumbnail small text-white">Ford Focus Fastback Titanium Plus</h6>
+                </div>
+                <div class="col-2 mt-4">
+                    <img src="img/tests-2.jpg" alt="Audi A6 Test" class="img-fluid w-100 mb-2" />
+                    <h6 class="test-image-thumbnail small text-white">Audi A6 2.0 TFSI</h6>
+                </div>
+                <div class="col-2 mt-4">
+                    <h6 class="test-image-thumbnail small text-white">Ford EcoSport 1.6 Powershift</h6>
+                    <p class="small text-red">EcoSport ganha motor 1.6 atrelado à transmissão automatizada de 6...</p>
+                </div>
+                <div class="col-2 mt-4">
+                    <img src="img/tests-3.jpg" alt="Audi Q3 1.4 Test" class="img-fluid w-100 mb-2" />
+                    <h6 class="test-image-thumbnail small text-white">Audi Q3 1.4</h6>
+                </div>
+                <div class="col-2 mt-4">
+                    <img src="img/tests-4.jpg" alt="BMW 420i Test" class="img-fluid w-100 mb-2" />
+                    <h6 class="test-image-thumbnail small text-white">BMW 420i Cabriolet</h6>
+                </div>
+            </section>
+            <!-- End of Hover Menu Testes Navbar -->
+            <!-- Submenu Navbar -->
+            <section class="navbar row bg-black small p-0" id="submenu-acessados">
+                <nav class="submenu navbar navbar-expand-lg navbar-light p-0">
+                    <div class="left-submenu-feature bg-red">
+                        <a class="nav-link text-white" href="#">+ Acessados</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Salão do Automóvel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Renegade</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Novo Sandero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Novo Fox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Novo KA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">HB 20</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Duster</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Golf</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Corolla</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Civic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">|A-Z|</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+            <!-- End of Submenu Navbar -->
+            <!-- Feature Display Gallery -->
+            <section class="display row">
+                <div class="col-sm-6 p-0 main-feature-img">
+                </div>
+                <div class="col-sm-6 bg-secondary">
+                    <div class="row h-50">
+                        <div class="col-sm-6 p-0">
+                            <img src="img/display-2.jpg" alt="Display KIA" class="img-fluid w-100" />
+                        </div>
+                        <div class="col-sm-6 p-0">
+                            <img src="img/display-3.jpg" alt="Display KIA" class="img-fluid w-100" />
+                        </div>
+                    </div>
+                    <div class="row h-50">
+                        <div class="col-sm-6 p-0">
+                            <img src="img/display-4.jpg" alt="Display KIA" class="img-fluid w-100" />
+                        </div>
+                        <div class="col-sm-6 p-0">
+                            <img src="img/display-5.jpg" alt="Display KIA" class="img-fluid w-100" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Feature Display Gallery -->
+            <!-- News Section -->
+            <section class="news row d-flex justify-content-center my-3">
+                <div class="col-md-3 pl-md-0">
+                    <img src="img/news-1.jpg" alt="Comparativos" class="img-fluid w-100 mb-2" />
+                    <div class="feature-image-text mx-2 mb-2">
+                        <h5 class="feature-image-title">Audi S3 X Mercedes-Benz CLA 45 AMG</h5>
+                        <p class="feature-image-subtitle small">Pista livre para o embate entre os dois cometas de cauda curta</p>
+                        <a href="#" class="feature-image-link small text-red">+ Troller T4 X Jeep Renegade</a>
+                    </div>
+                </div>
+                <div class="col-md-3 pl-md-0">
+                    <img src="img/news-2.jpg" alt="Impressões" class="img-fluid w-100 mb-2" />
+                    <div class="feature-image-text mx-2 mb-2">
+                        <h5 class="feature-image-title">Nissan GT-R</h5>
+                        <p class="feature-image-subtitle small">Pilotamos o Godzilla, o monstro recordista de Nürburgring que assombra os alemões</p>
+                        <a href="#" class="feature-image-link small text-red">+ Troller T4 X Jeep Renegade</a>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-md-0">
+                    <img src="img/news-3.jpg" alt="Impressões" class="img-fluid w-100 mb-2" />
+                    <div class="feature-image-text mx-2 mb-2">
+                        <h5 class="feature-image-title">BMW Série 2 Active Tourer</h5>
+                        <p class="feature-image-subtitle small">Pista livre para o embate entre os dois cometas de cauda curta</p>
+                        <a href="#" class="feature-image-link small text-red">+ Troller T4 X Jeep Renegade</a>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-md-0">
+                    <img src="img/news-4.jpg" alt="Auto-serviço" class="img-fluid w-100 mb-2" />
+                    <div class="feature-image-text mx-2 mb-2">
+                        <h5 class="feature-image-title medium">Chevrolet mostra nova geração do Malibu</h5>
+                        <p class="feature-image-subtitle small">Sedã perdeu 136kg e ampliou o espaço entre-eixos</p>
+                        <a href="#" class="feature-image-link small text-red">+ Troller T4 X Jeep Renegade</a>
+                    </div>
+                </div>
+            </section>
+            <!-- End of News Section -->
+        </div>
+        <script>
+            function showHoverbarCarros() {
+                if(document.querySelector('#hovermenu-carros').style.display === 'flex') {
+                    document.querySelector('#navbarDropdownCarros').style.backgroundColor = 'inherit';
+                    document.querySelector('#hovermenu-carros').style.display = 'none';
+                } else {
+                    document.querySelector('#navbarDropdownCarros').style.backgroundColor = '#000';
+                    document.querySelector('#hovermenu-carros').style.display = 'flex';
+                    // Reset hoverbarTestes
+                    document.querySelector('#navbarDropdownTestes').style.backgroundColor = 'inherit';
+                    document.querySelector('#hovermenu-testes').style.display = 'none';
+                }
+            }
+
+            function showHoverbarTestes() {
+                if(document.querySelector('#hovermenu-testes').style.display === 'flex') {
+                    document.querySelector('#navbarDropdownTestes').style.backgroundColor = 'inherit';
+                    document.querySelector('#hovermenu-testes').style.display = 'none';
+                } else {
+                    document.querySelector('#navbarDropdownTestes').style.backgroundColor = '#000';
+                    document.querySelector('#hovermenu-testes').style.display = 'flex';
+                    // Reset hoverbarCarros
+                    document.querySelector('#navbarDropdownCarros').style.backgroundColor = 'inherit';
+                    document.querySelector('#hovermenu-carros').style.display = 'none';
+                }
+            }
+
+            function showMainHoverbar() {
+                if(document.querySelector('#navbar-main').style.display === 'flex') {
+                    document.querySelector('#navbar-main').style.display = 'none';
+                } else {
+                    document.querySelector('#navbar-main').style.display = 'flex';
+                }
+            }
+        </script>
+    </body>
+</html>
